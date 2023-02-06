@@ -3,22 +3,6 @@ import { useState, useEffect } from "react";
 import "./SearchMovies.css";
 
 export default function SearchMovies() {
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-    async function getMovies() {
-      const response = await fetch(
-        "http://www.omdbapi.com/?apikey=37fe945a&s=Bond"
-      );
-      const data = await response.json();
-
-      console.log(data);
-      setMovies(data.movies);
-    }
-
-    getMovies();
-  }, []);
-
   return (
     <div className="search-movies">
       <h2>Search Movies</h2>
