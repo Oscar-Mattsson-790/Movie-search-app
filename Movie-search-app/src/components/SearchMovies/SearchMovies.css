@@ -1,0 +1,29 @@
+.search-movies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background-color: rgb(19, 74, 73);
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.input-box input {
+  width: 100%;
+}
+
+.search-btn {
+  background-color: aqua;
+  color: black;
+  width: 30%;
+  margin-bottom: 20px;
+}
