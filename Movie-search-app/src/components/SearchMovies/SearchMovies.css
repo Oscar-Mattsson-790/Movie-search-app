@@ -19,10 +19,11 @@
 
 .input-box input {
   width: 100%;
+  text-align: center;
 }
 
 .search-btn {
-  background-color: aqua;
+  background-color: rgb(113, 238, 238);
   color: black;
   width: 30%;
   margin-bottom: 20px;

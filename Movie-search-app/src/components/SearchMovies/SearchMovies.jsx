@@ -9,11 +9,11 @@ export default function SearchMovies() {
       <form className="input-box">
         <label>
           <span>Title: </span>
-          <input type="text" placeholder="Search title" />
+          <input type="text" placeholder="enter title" />
         </label>
         <label>
           <span>Year: </span>
-          <input type="number" placeholder="Search year" />
+          <input type="text" placeholder="enter year" />
         </label>
       </form>
       <button className="search-btn">Search</button>
