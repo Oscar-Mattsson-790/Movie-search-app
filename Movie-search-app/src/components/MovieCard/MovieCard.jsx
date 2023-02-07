@@ -19,9 +19,9 @@ export default function MovieCard({ title, poster, imdbID, year }) {
       )}
 
       <div className="moive-box">
-        <h2>{title}</h2>
-        <h3>{year}</h3>
-        <p>{imdbID}</p>
+        <h2>Title: {title}</h2>
+        <h3>Produced: {year}</h3>
+        <p>imdbID: {imdbID}</p>
       </div>
     </div>
   );
