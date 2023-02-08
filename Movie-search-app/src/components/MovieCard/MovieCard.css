@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 .display-movies {
   display: flex;
@@ -32,18 +32,18 @@
 
 h2 {
   font-size: 20px;
-  font-family: "MedievalSharp", cursive;
+  font-family: "Anton", sans-serif;
   font-weight: bold;
 }
 
 h3 {
   font-size: 15px;
-  font-family: "MedievalSharp", cursive;
+  font-family: "Anton", sans-serif;
   font-weight: bold;
 }
 
 p {
   font-size: 12px;
-  font-family: "MedievalSharp", cursive;
+  font-family: "Anton", sans-serif;
   font-weight: bold;
 }
