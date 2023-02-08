@@ -5,12 +5,13 @@ import "./App.css";
 
 function App() {
   const [movies, setMoives] = useState([]);
+  const [error, setError] = useState(null);
 
   return (
     <div className="App">
       <h1>Movie search app</h1>
-      <SearchMovies setMoives={setMoives} />
-      <DisplayMovies movies={movies} />
+      <SearchMovies setMoives={setMoives} setError={setError} />
+      <DisplayMovies movies={movies} error={error} />
     </div>
   );
 }

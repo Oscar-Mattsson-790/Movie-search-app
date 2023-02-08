@@ -1,18 +1,24 @@
 import { useState, useEffect } from "react";
 import "./SearchMovies.css";
 
-export default function SearchMovies({ setMoives }) {
+export default function SearchMovies({ setMoives, setError }) {
   const [title, setTitle] = useState("");
   const [year, setYear] = useState("");
 
   useEffect(() => {
     async function getMoives() {
-      const response = await fetch(
-        `http://www.omdbapi.com/?apikey=37fe945a&s=${title}&y=${year}`
-      );
-      const data = await response.json();
+      try {
+        const response = await fetch(
+          `http://www.omdbapi.com/?apikey=37fe945a&s=${title}&y=${year}`
+        );
+        const data = await response.json();
 
-      setMoives(data.Search);
+        setMoives(data.Search);
+        setError(null);
+      } catch (err) {
+        setError("Could not fetch the data");
+        console.log(err.message);
+      }
     }
 
     getMoives();
