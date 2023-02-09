@@ -5,7 +5,6 @@ export default function MovieCard({ title, poster, imdbID, year }) {
   const fallBackPicture =
     "https://www.altavod.com/assets/images/poster-placeholder.png";
 
-  console.log(poster);
   return (
     <div className="display-movies">
       {poster.length > 3 ? (

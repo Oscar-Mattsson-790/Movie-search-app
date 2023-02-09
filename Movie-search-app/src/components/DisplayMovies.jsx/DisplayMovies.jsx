@@ -3,8 +3,6 @@ import "./DisplayMovies.css";
 import MovieCard from "../MovieCard/MovieCard";
 
 export default function DisplayMovies({ movies, error }) {
-  console.log(movies);
-
   return (
     <div className="display-movies-container">
       {error && <div>{error}</div>}
