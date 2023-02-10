@@ -4,12 +4,13 @@ import "./SearchMovies.css";
 export default function SearchMovies({ setMoives, setError }) {
   const [title, setTitle] = useState("");
   const [year, setYear] = useState("");
+  const API_KEY = "37fe945a";
 
   useEffect(() => {
     async function getMoives() {
       try {
         const response = await fetch(
-          `http://www.omdbapi.com/?apikey=37fe945a&s=${title}&y=${year}`
+          `http://www.omdbapi.com/?apikey=${API_KEY}&s=${title}&y=${year}`
         );
         const data = await response.json();
 
